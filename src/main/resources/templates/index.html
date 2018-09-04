@@ -1,25 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head lang="en">
-    <title>Spring Framework Guru</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
-          th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
-          rel="stylesheet" media="screen" />
+    <title>Spring Boot Demo</title>
 
-    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
-            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
-
-    <link href="../static/css/demo.css" th:href="@{css/demo.css}" rel="stylesheet" media="screen"/>
-    <script>
-    $(document).ready(function() {
-       $("h2").css("color", "blue");
-    });
-    </script>
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
 </head>
 <body>
-<h1>Hello</h1>
-<h2>Fellow Spring Framework Gurus!!!</h2>
+
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+</div>
 </body>
 </html>
